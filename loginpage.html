@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+        background: url(lg.png);
+background-size: cover;
+background-repeat: no-repeat;
+justify-content: center;
+align-items: center;
+ 
+    }
+    
+    h2 {
+      text-align: center;
+      color: white;
+      font-size: 30px;
+    }
+    
+    .container {
+      background-color: #fff;
+      max-width: 400px;
+      margin: 150px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: transparent;
+    
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      color: white;
+    }
+    
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function showSuccessMessage() {
+      alert("Successfully Logged In!");
+      document.getElementById("loginForm").reset(); // Reset the form
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username"style="color:white; font-size:20px;">Username:</label>
+      <input type="text" id="username" name="username" required style="background: transparent;">
+      <label for="password"style="color:white; font-size:20px;">Password:</label>
+      <input type="password" id="password" name="password" required style="background: transparent;">
+      <button type="submit" onclick="showSuccessMessage()">Login</button>
+    </form>
+  </div>
+</body>
+</html>

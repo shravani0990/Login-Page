@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link href="style1.css" rel="stylesheet" />
+    <script>
+    function showSuccessMessage() {
+      alert("Successfully Logged In!");
+      document.getElementById("loginForm").reset(); 
+    }
+    </script>
+</head> 
+<body>
+
+    <div class="logpad">
+        <div class="logo">
+            <img src="pic1.jpg" height="100" width="100">
+        </div>
+        <div>
+            <span>Login</span>
+        </div>
+        <div class="logbox">
+            <label>Username</label>
+            <input type="text" name="username" required>
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit" onclick="showSuccessMessage()">Login</button>
+    </div>
+
+</body>
+</html>
